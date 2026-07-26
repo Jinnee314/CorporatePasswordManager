@@ -236,7 +236,15 @@ void testAll()
 
 */
 
+void testSubHVlad()
+{
+	ASSERT_EQUAL(SubHVlad(0xA2), uint8_t(0x9B));
+	ASSERT_EQUAL(SubHVlad(0x0B), uint8_t(0x8E));
+	ASSERT_EQUAL(SubHVlad(0x00), uint8_t(0xB1));
+}
+
 void testAll()
 {
-	
+	UnitTest::TestRunner tr;
+	RUN_TEST(tr, testSubHVlad);
 }
