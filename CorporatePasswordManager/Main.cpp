@@ -4,6 +4,7 @@
 
 int main()
 {
-	std::cout << "Hello world!";
+	testAll();
+
 	return 0;
 }
